@@ -1,0 +1,16 @@
+# TDDA69
+# Lab 1, part 2: Other basic concepts
+
+# Question 2.1
+# In normal order evaluation functions are applyed before evaluating function arguments, thus test(0, f()) would return 0.
+# Applicative order is a strict evaluation strategy, all arguments to a function are evaluated completely before the function is applied. The call would be stuck in a loop.
+
+# Question 2.2a
+# When keep_val() is called a closure is created where value = "Stored". When print_mess is called it uses that variable, not the global one.
+# g(x) will print the x it recived, as it is shadowing the global variable x. When f() is called it will use the global x instead.
+
+# Question 2.2c
+# Using dynamic scoping, the most recent environment is referenced when looking up identifiers. This mean that when f() is called from within g(x) the x printed would be whatever x g(x) recieved as an argument. 5000 in our case.
+
+# Question 3b
+# The square of any negative number is a positive number. When fullfilling the constraint in reverse (setting v2) the negative root is always ignored.
